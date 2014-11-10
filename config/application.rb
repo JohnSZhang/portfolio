@@ -19,5 +19,11 @@ module Portfolio
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    config.assets.paths << Rails.root.join("vendor")
+    config.assets.paths << File.expand_path('../../vendor/assets/fonts/')
+    config.assets.paths << File.expand_path('../../vendor/assets/images/')
+    config.assets.paths << File.expand_path('../../vendor/assets/stylesheets/images/')
+    config.assets.paths << File.expand_path('../../vendor/assets/javascripts/')
+    config.assets.paths << File.expand_path('../../vendor/assets/stylesheets/')
   end
 end
