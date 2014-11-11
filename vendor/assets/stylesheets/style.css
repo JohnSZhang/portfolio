@@ -725,6 +725,8 @@
 				.feature.right .image img {
 					left: 0;
 					top: 0;
+					width: 416px;
+					height: 312px;
 				}
 
 			.feature.right .content {
@@ -807,7 +809,8 @@
 			margin: 0 0 0.75em 0;
 			text-align: center;
 			width: 2.35em;
-			border: 5px solid #4eb980
+			border: 5px solid #4eb980;
+			opacity: .99;
 		}
 
 			#header .logo.fa-paper-plane-o:before {
