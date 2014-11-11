@@ -10,3 +10,4 @@ Rails.application.config.assets.precompile += %w( skel.css font-awesome.min.css 
 Rails.application.config.assets.precompile += %w( header.jpg top-1600.svg top-1280.svg top-3200.svg bottom-1280.svg overlay.png)
 Rails.application.config.assets.precompile += %w( pic01.jpg pic02.jpg pic03.jpg)
 Rails.application.config.assets.precompile += %w( style.scss)
+Rails.application.config.assets.precompile += %w( qutria.png)

@@ -8,11 +8,12 @@
 
 		<!-- Header -->
 			<div id="header">
-				<span class="logo icon fa-paper-plane-o"></span>
+
+					<%= image_tag "johnzhang.jpeg", :class => 'logo' %>
 				<h1>Hi!</h1>
 				<p>I'm John Zhang, a web developer who's passtionate about his craft. </p>
 				<br />
-				<p> Checkout my <a href="http://html5up.net">Resume</a> or <a href="http://html5up.net/license">Github</a>, or scroll down for a gallery of my work.</p>
+				<p> Checkout my <a href="http://html5up.net">Resume</a> or <a href="https://github.com/JohnSZhang">Github</a>, or scroll down for a gallery of my work.</p>
 			</div>
 
 		<!-- Main -->
@@ -26,54 +27,64 @@
 					<br />
 						I Work With:
 					<br />
-					Backbone.js, JQuery, Ruby On Rails, Magento, Wordpress</h3>
-					<!--
-					<p>Tellus erat mauris ipsum fermentum<br />
-					etiam vivamus nunc nibh morbi.</p>
-					-->
+					Backbone.js, JQuery, Magento, Node.js, Ruby On Rails</h3>
+
+					<p>here are some extra nice things about me.<br />
+					I'm really cool and friendly, I promise!</p>
+
 				</header>
 
 				<div class="box alt container">
 					<section class="feature left">
-						<a href="#" class="image icon fa-signal"><img src="<%= image_url('pic01.jpg') %>" alt="" /></a>
+						<a href="http://www.qutria.com" class="image icon"><%= image_tag "qutria.png" %></a>
 						<div class="content">
 							<h3>Qutria</h3>
-							<p>A clone of StackOverflow, with real-time chatrooms, bringing synchornous and asynchornous learning togther to foster a sense of community</p>
+							<p>A clone of StackOverflow, with responsive real-time chatrooms, bringing synchornous and asynchornous learning togther to foster a sense of community</p>
 						</div>
 					</section>
 					<section class="feature right">
-						<a href="#" class="image icon fa-code"><img src="<%= image_url('pic02.jpg') %>" alt="" /></a>
+						<a href="http://asteroids-maybe.herokuapp.com/" class="image icon"><img src="<%= image_url('pic02.jpg') %>" alt="" /></a>
 						<div class="content">
 							<h3>Asteroids-Maybe</h3>
 							<p>What started out as a clone of the classic arcade game soon started evolving into a scrolling shooter, with HP, Boss, and Elastic Body Collision.</p>
 						</div>
 					</section>
-					<section class="feature left">
-						<a href="#" class="image icon fa-mobile"><img src="<%= image_url('pic02.jpg') %>" alt="" /></a>
+					<!--<section class="feature left">
+						<a href="#" class="image icon "><img src="<%= image_url('pic02.jpg') %>" alt="" /></a>
 						<div class="content">
 							<h3>HN Top Books</h3>
 							<p>Written in Code Igniter, HN Top News uses the HackerNews search API and Amazon's product API to list the most mentioned books in Hacker News Nistory</p>
 						</div>
-					</section>
-					<section class="feature right">
-						<a href="#" class="image icon fa-mobile"><img src="<%= image_url('pic02.jpg') %>" alt="" /></a>
+					</section>-->
+					<section class="feature left">
+						<a href="https://github.com/JohnSZhang/ActiveRecordLite" class="image icon "><%= image_tag "activerecordlite.png" %></a>
 						<div class="content">
 							<h3>ActiveRecord Lite + Ruby on Rails Lite </h3>
 							<p>A "lite" implementation of the Rails Router and ActiveRecord Library to better understand MVC Style programming and Ruby On Rails.</p>
 						</div>
 					</section>
-					<section class="feature left">
-						<a href="#" class="image icon fa-mobile"><img src="<%= image_url('pic02.jpg') %>" alt="" /></a>
+					<section class="feature right">
+						<a href="https://github.com/JohnSZhang/minesweeper" class="image icon "><%= image_tag "huntnovember.png" %></a>
 						<div class="content">
 							<h3>Hunt for Red November</h3>
 							<p>A Ruby Red Scare themed minesweeper game, use Ruby's threading ability to handle animation + controls, and Mutex to sync game state.</p>
+						</div>
+					</section>
+					<section class="feature left">
+						<a href="https://github.com/JohnSZhang/snake-jQuery" class="image icon "><%= image_tag "solid-snake.png" %></a>
+						<div class="content">
+							<h3>Solid Snake Adventure </h3>
+							<p>A jQuery implementation of the classic arcade game with your favorite snake who loves to spying and hide under boxes.</p>
 						</div>
 					</section>
 				</div>
 
 				<footer class="major container 75%">
 					<h3>Working on something cool?</h3>
-					<p>I'm always looking to contribute to new projects, hit me up if you are working on something you are passionate about and need an extra keyboard.</p>
+					<p>I'm always looking to contribute to new projects,
+						<br/>
+					hit me up if you are working on something you are passionate about
+					<br/> and need an extra set of keyboards.</p>
 					<ul class="actions">
 						<li><a href="#contact" class="button">Contact Me!</a></li>
 					</ul>

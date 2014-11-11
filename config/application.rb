@@ -25,5 +25,6 @@ module Portfolio
     config.assets.paths << File.expand_path('../../vendor/assets/stylesheets/images/')
     config.assets.paths << File.expand_path('../../vendor/assets/javascripts/')
     config.assets.paths << File.expand_path('../../vendor/assets/stylesheets/')
+    config.assets.paths << File.expand_path('../../app/assets/images/')
   end
 end
