@@ -11,3 +11,5 @@ Rails.application.config.assets.precompile += %w( header.jpg top-1600.svg top-12
 Rails.application.config.assets.precompile += %w( pic01.jpg pic02.jpg pic03.jpg)
 Rails.application.config.assets.precompile += %w( style.scss)
 Rails.application.config.assets.precompile += %w( qutria.png)
+Rails.application.config.assets.precompile += %w( johnzhang.pdf)
+Rails.application.config.assets.precompile += %w( princess.png)
