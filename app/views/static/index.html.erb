@@ -7,9 +7,21 @@
 
 
 		<!-- Header -->
+		<% if flash[:message] %>
+			<div id="flash">
+				<p>
+					<%= flash[:message] %>
+				</p>
+			</div>
+		<% end %>
+		<script charset="utf-8">
+			$('#flash p').fadeTo( 1500 , 0, function() {
+				$('#flash').remove();
+  });
+		</script>
 			<div id="header">
 
-					<%= image_tag "johnzhang.jpeg", :class => 'logo' %>
+				<%= image_tag "johnzhang.jpeg", :class => 'logo' %>
 				<h1>Hi!</h1>
 				<p>I'm John Zhang, a web developer who's passtionate about his craft. </p>
 				<br />
@@ -62,14 +74,16 @@
 						<a href="https://github.com/JohnSZhang/ActiveRecordLite" class="image icon "><%= image_tag "activerecordlite.png" %></a>
 						<div class="content">
 							<h3>ActiveRecord Lite + Ruby on Rails Lite </h3>
-							<p>A "lite" implementation of the Rails Router and ActiveRecord Library to better understand MVC Style programming and Ruby On Rails.</p>
+							<p>A "lite" implementation of the Rails Router and ActiveRecord Library to better understand MVC Style programming and Ruby On Rails.|
+								<a href="https://github.com/JohnSZhang/ActiveRecordLite">Github</a></p>
 						</div>
 					</section>
 					<section class="feature right">
 						<a href="https://github.com/JohnSZhang/minesweeper" class="image icon "><%= image_tag "huntnovember.png" %></a>
 						<div class="content">
 							<h3>Hunt for Red November</h3>
-							<p>A Ruby Red Scare themed minesweeper game, use Ruby's threading ability to handle animation + controls, and Mutex to sync game state.</p>
+							<p>A Ruby Red Scare themed minesweeper game, use Ruby's threading ability to handle animation + controls, and Mutex to sync game state. |
+								<a href="https://github.com/JohnSZhang/minesweeper">Github</a></p>
 						</div>
 					</section>
 					<section class="feature left">
@@ -84,7 +98,8 @@
 						<a href="https://trello-lite.herokuapp.com/" class="image icon "><%= image_tag "trello-lite.png" %></a>
 						<div class="content">
 							<h3>Trello Clone</h3>
-							<p>A Trello clone utilizing Backbone.js' realize model updates and jQuery UI to create draggable and auto-resorted cards.</p>
+							<p>A Trello clone utilizing Backbone.js' realize model updates and jQuery UI to create draggable and auto-resorted cards. |
+								<a href="https://github.com/JohnSZhang/TrelloClone">Github</a> </p>
 						</div>
 					</section>
 				</div>
@@ -112,7 +127,8 @@
 
 					<p>If you have any questions, please use the form below or email me directly at john.shimin.zhang@gmail.com</p>
 
-					<form method="post" action="#">
+					<form method="post" action="/contact">
+						<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 						<div class="row">
 							<div class="6u 12u(3)">
 								<input type="text" name="name" placeholder="Name" />
@@ -136,15 +152,13 @@
 					</form>
 
 					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="https://www.facebook.com/shimin.j.zhang" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="http://instagram.com/johnthebestest" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/JohnSZhang" class="icon fa-github"><span class="label">Github</span></a></li>
 					</ul>
 
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 				</div>
